@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/contentcolor"
+        tools:context="com.example.elasri.pickliq.BarListFragment">
+<android.support.v7.widget.RecyclerView
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/contentcolor"
+    android:scrollbars="vertical"
+    android:clipToPadding="false"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/bar_recycler_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"/>
+</FrameLayout>

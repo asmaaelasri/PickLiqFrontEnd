@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_outlets"
+        android:icon="@drawable/beverageoutletsicon"
+        android:title="@string/menu_outlets" />
+    <item
+        android:id="@+id/menu_whattoget"
+        android:icon="@drawable/whattogeticon"
+        android:title="@string/menu_whattoget" />
+    <item
+        android:id="@+id/menu_barlist"
+        android:icon="@drawable/barlisticon"
+        android:title="@string/menu_barlist" />
+    <item
+        android:id="@+id/menu_pricelist"
+        android:icon="@drawable/drinkicon"
+        android:title="@string/menu_pricelist" />
+
+    <item
+        android:id="@+id/menu_events"
+        android:icon="@drawable/events"
+        android:title="@string/menu_events" />
+
+
+</menu>

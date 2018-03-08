@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@color/contentcolor"
+    tools:context="com.example.elasri.pickliq.WhatToGetFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/howmuch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="190sp"
+        android:textColor="@color/darkblue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="60sp"
+            android:text=" ₹"
+            android:gravity="bottom"
+            android:textColor="@color/darkblue"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dsb_min="100"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            app:dsb_max="700"
+            app:dsb_progressColor="@color/darkblue"
+            app:dsb_trackColor="@android:color/white"
+            app:dsb_indicatorColor="@color/darkblue"
+            app:dsb_rippleColor="@color/darkblue"
+        />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/white_spinner" >
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/category"
+                 />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/whattoget"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:text="What can i get ?"
+            android:textColor="@android:color/white"
+            android:background="@drawable/white_button"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</FrameLayout>

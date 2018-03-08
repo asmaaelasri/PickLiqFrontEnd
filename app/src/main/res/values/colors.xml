@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#23222A</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="contentcolor">#1e1e25</color>
+    <color name="slategrey">#74818E</color>
+    <color name="shadylady">#9BA4AE</color>
+    <color name="spindle">#B9BFC6</color>
+    <color name="colorAccent">#9BA4AE</color>
+    <color name="lightgrey">#d4d4d6</color>
+    <color name="darkblue">#77A39E</color>
+    <color name="colorAccentfaded">#aba76b5c</color>
+
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:buttonColor="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agreement"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="20dp"
+        />
+    <View
+        android:id="@+id/view"
+        android:layout_width="20dp"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="20dp">
+    </View>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginLeft="20dp"
+        android:text="description"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/agree"
+                android:layout_width="150dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_button"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="5dp"
+                android:text="I agree" />
+            <Button
+                android:id="@+id/disagree"
+                android:layout_width="150dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_button"
+                android:textColor="@android:color/white"
+                android:text="I disagree" />
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

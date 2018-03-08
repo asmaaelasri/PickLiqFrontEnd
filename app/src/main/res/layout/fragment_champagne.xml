@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.v7.widget.RecyclerView
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/contentcolor"
+    android:scrollbars="vertical"
+    android:clipToPadding="false"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/champagne_recycler_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"/>
+<RelativeLayout
+android:layout_width="wrap_content"
+    android:layout_marginBottom="?attr/actionBarSize"
+
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/numeric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/sort_by_numeric_order"
+        android:layout_marginRight="7dp"
+        android:layout_gravity="right"
+        app:backgroundTint="@color/darkblue"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/alphabetic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        android:src="@drawable/sort_by_alphabet"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="7dp"
+        android:layout_gravity="right"
+        app:backgroundTint="@color/darkblue"
+        android:visibility="gone"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/sort"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/filter"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/darkblue"
+        app:elevation="0dp" />
+
+</LinearLayout>
+
+</RelativeLayout>
+    </RelativeLayout>
