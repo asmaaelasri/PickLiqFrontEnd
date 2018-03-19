@@ -23,6 +23,7 @@ import cz.msebera.android.httpclient.Header;
 
 
 public class BarListFragment extends Fragment {
+    ArrayList<Integer> id_bar = new ArrayList<Integer>();
     ArrayList<String> name_bar = new ArrayList<String>();
     ArrayList<String> address_bar = new ArrayList<String>();
     ArrayList<Double> latitude_bar = new ArrayList<Double>();
@@ -54,6 +55,8 @@ public class BarListFragment extends Fragment {
                     Log.d("LENGTH",""+places.length());
                     for (int i = 0; i < places.length(); i++) {
                         JSONObject place = places.getJSONObject(i);
+                        Integer id  = place.getInt("placeId");
+                        id_bar.add(id);
                         String name  = place.getString("name");
                         Log.d("Name",name);
                         String address = place.getString("address");
@@ -91,7 +94,7 @@ public class BarListFragment extends Fragment {
         View rootView =  inflater.inflate(R.layout.fragment_bar_list, container, false);
         RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.bar_recycler_view);
         rv.setHasFixedSize(true);
-        adapter = new BarListAdapter(this.getContext(),name_bar,address_bar,latitude_bar,longitude_bar);
+        adapter = new BarListAdapter(this.getContext(),id_bar,name_bar,address_bar,latitude_bar,longitude_bar);
         rv.setAdapter(adapter);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
         rv.setLayoutManager(mLayoutManager);

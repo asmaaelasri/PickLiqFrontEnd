@@ -33,7 +33,7 @@
 
 
     <string-array name="category">
-        <item>None</item>
+        <item>Choose the category</item>
         <item>Whiskey</item>
         <item>Wine</item>
         <item>Gin</item>
@@ -52,6 +52,15 @@
     <!-- AdMob ad unit IDs -->
     <string name="admob_app_id">ca-app-pub-3715048214402822~5489796687</string>
     <string name="banner_home_footer">ca-app-pub-3715048214402822/1331059822</string>
+
+    <string name="title_activity_place_map">Map</string>
+    <string name="title_activity_place_direction">Map</string>
+
+    <string name="directionsApiKey">AIzaSyD8vGO_oyDlbrMybQWxA3XrkmtsNho0mPU</string>
+
+
+    <string name="agreement">Welcome to the PickLiq Applications Software. This Agreement is between you (or any authorised user of the Software), and PickLiq, including any of its affiliates (collectively, \"PickLiq\").\n\n In order to download and install the Software you must agree to the terms of this Agreement (including any terms that are displayed to you in a pop-up screen before you install the Software). In addition to agreeing to the terms of this Software Licence Agreement you are also bound by the terms of service from where you have downloaded the PickLiq Application.\n\n This Agreement is a legally binding contract that should be read in its entirety. If you disagree with any of the terms below, PickLiq does not grant you a licence to use the Software and you may not download it and should cancel or exit any installation you may have started. Data provided by you during installation and certain other information is subject to the PickLiq Privacy Policy \n\n You agree that by installing the Software, you acknowledge that you are at least 18 years old, have read this Agreement, understand it, and agree to be bound by its terms.\n\n PickLiq reserves the right to update and change, from time to time, this Agreement and all documents incorporated into it by reference. Use of the Software after any such change constitutes your acceptance of such changes.\n\n\n Licensed Uses and Restrictions.\n\n\n Software, documentation, and local electronic files installed or utilised by the installer application are owned by PickLiq, and are licensed to you by PickLiq on a worldwide (except as limited below), non-exclusive, non-sublicenseable basis on the terms set out in this Agreement. This Agreement defines legal use of the Software, all updates, revisions, substitutions, and any copies of the Software made by or for you. All rights not expressly granted to you are reserved by PickLiq or their respective owners. From time to time PickLiq may automatically download the latest version of the Software and notify you when it\'s ready to install. If you wish to update your Software, you must agree to the terms of the then current Agreement, in order for the update to be installed on your device.\n\n PickLiq is not liable to you for any and all direct, incidental, special, indirect, or consequential damages arising out your use or inability to use or access the Software, or any data provided through the Software, whether such damage claims are brought under any theory of law or equity. Damages excluded by this clause include, without limitation, those for loss of business profits, injury to person or property, business interruption, loss of business or personal information.\n\n Information provided through the Software may be delayed, inaccurate, or contain errors or omissions, and PickLiq will have no liability with respect thereto. PickLiq may change or discontinue any aspect or feature of the Software or the use of all or any features or technology in the Software at any time without prior notice to you.\n\n\n Indemnification.\n\n\n You agree to indemnify and hold the PickLiq Entities harmless from any claim or demand, including reasonable legal fees, made by any third party in connection with or arising out of your use of the Software, your violation of any terms or conditions of this Agreement, your violation of applicable laws, or your violation of any rights of another person or entity. You are solely responsible for compliance with agreements you have executed with third parties.\n\n\n Precedence.\n\n\n This Agreement and any additional Terms of Use constitute the entire understanding between the parties respecting use of the Software, superseding all prior agreements between you and PickLiq. In the event of any conflict between the terms of this Agreement and those in any Terms of Use, the terms of this Agreement will control, except to the extent that the Terms of Use impose additional restrictions and liabilities on your actions.\n\n\n No General Waiver; Severability.\n\n\nThe failure of PickLiq to exercise or enforce any right or provision of this Agreement shall not constitute a waiver of such right or provision.</string>
+
 
 
 </resources>

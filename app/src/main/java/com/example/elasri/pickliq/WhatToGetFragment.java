@@ -1,6 +1,7 @@
 package com.example.elasri.pickliq;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -75,8 +76,9 @@ public class WhatToGetFragment extends Fragment {
                 brand_alcohol = new ArrayList<String>();
                 subcategory_alcohol = new ArrayList<String>();
                 range_alcohol = new ArrayList<String>();
-                if(spinner.getSelectedItem().toString().equals("None")){
-                    invokeWSPricetAlcohols(Integer.parseInt(howmuch.getText().toString()));
+                if(spinner.getSelectedItem().toString().equals("Choose the category")){
+                    Log.d("NOCATEGORY1","NOCATEGORY1");
+                    invokeWSPriceAlcohols(Integer.parseInt(howmuch.getText().toString()));
                 }
                 else{
                     invokeWSPriceandCategorytAlcohols(Integer.parseInt(howmuch.getText().toString()),spinner.getSelectedItem().toString());
@@ -95,6 +97,7 @@ public class WhatToGetFragment extends Fragment {
                         dialog.dismiss();
                     }
                 });
+
 
             }
         });
@@ -135,14 +138,14 @@ public class WhatToGetFragment extends Fragment {
         });
     }
 
-    private void invokeWSPricetAlcohols(int price) {
+    private void invokeWSPriceAlcohols(int price) {
         AsyncHttpClient client = new AsyncHttpClient();
         String url = Config.IPURL+"search/"+price;
         client.get(getContext(), url, new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray alcohols) {
                 try {
-                    Log.d("LENGTH",""+alcohols.length());
+                    Log.d("NOCATEGORY2",""+alcohols.length());
                     for (int i = 0; i < alcohols.length(); i++) {
                         JSONObject alcohol = alcohols.getJSONObject(i);
                         String name  = alcohol.getString("name");

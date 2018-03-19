@@ -10,6 +10,7 @@
     <color name="lightgrey">#d4d4d6</color>
     <color name="darkblue">#77A39E</color>
     <color name="colorAccentfaded">#aba76b5c</color>
-
+    <color name="gradient_end">@android:color/holo_red_dark</color>
+    <color name="gradient_start">@android:color/holo_red_light</color>
 
 </resources>

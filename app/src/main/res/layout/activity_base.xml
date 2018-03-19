@@ -14,7 +14,7 @@
         android:layout_marginTop="?attr/actionBarSize"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/contentcolor">
+        android:background="@android:color/black">
     </FrameLayout>
 
 
@@ -25,9 +25,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:background="@drawable/gradient_red"
         app:itemIconTint="@color/bottom_nav_icon_color_selector"
         app:itemTextColor="@color/bottom_nav_icon_color_selector"
-        android:background="@color/colorPrimary"
         app:menu="@menu/navigation" />
 
     <LinearLayout
@@ -39,11 +39,20 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#dd4b39"
+            android:background="@drawable/gradient_red"
             android:elevation="6dp"
             android:fitsSystemWindows="true"
+
             android:minHeight="?attr/actionBarSize"
             app:titleTextColor="@android:color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:id="@+id/toolbar_title" />
         </android.support.v7.widget.Toolbar>
 
         <com.miguelcatalan.materialsearchview.MaterialSearchView

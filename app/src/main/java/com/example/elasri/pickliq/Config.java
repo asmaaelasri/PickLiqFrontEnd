@@ -6,7 +6,5 @@ package com.example.elasri.pickliq;
 
 public class Config {
     public static final String IPURL = "http://10.50.3.197:8081/";
-    //public static final String IPURL = "http://192.168.1.8:8081/";
-
-
+    //public static final String IPURL = "http://127.0.0.1:8081/";
 }

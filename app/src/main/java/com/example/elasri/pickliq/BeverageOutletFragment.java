@@ -50,19 +50,13 @@ public class BeverageOutletFragment extends Fragment {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray outlets) {
                 try {
-                    Log.d("LENGTH",""+outlets.length());
                     for (int i = 0; i < outlets.length(); i++) {
                         JSONObject outlet = outlets.getJSONObject(i);
                         String name  = outlet.getString("name");
-                        Log.d("Name",name);
                         String address = outlet.getString("address");
-                        Log.d("Address",address);
                         double latitude = outlet.getDouble("latitude");
-                        Log.d("Latitude", String.valueOf(latitude));
                         double longitude = outlet.getDouble("longitude");
-                        Log.d("Longitude", String.valueOf(longitude));
                         name_outlet.add(name);
-                        Log.d("LENGHT TAB1", String.valueOf(name_outlet.size()));
                         address_outlet.add(address);
                         latitude_outlet.add(latitude);
                         longitude_outlet.add(longitude);

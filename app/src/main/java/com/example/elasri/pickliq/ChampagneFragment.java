@@ -80,7 +80,7 @@ public class ChampagneFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView =  inflater.inflate(R.layout.fragment_beer, container, false);
+        View rootView =  inflater.inflate(R.layout.fragment_champagne, container, false);
         RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.champagne_recycler_view);
         final FloatingActionButton sort = (FloatingActionButton) rootView.findViewById(R.id.sort);
         final FloatingActionButton alphabetic = (FloatingActionButton) rootView.findViewById(R.id.alphabetic);
